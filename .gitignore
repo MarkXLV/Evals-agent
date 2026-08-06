@@ -8,6 +8,9 @@ venv/
 .idea/
 .vscode/
 
+# Browser-automation scratch output (screenshot tooling)
+.playwright-mcp/
+
 # Eval outputs. runs/ can get large (full traces per case), so it stays out of
 # version control. reports/ is ignored EXCEPT the final deliverables, which are
 # whitelisted below so the submitted results ship with the repo.

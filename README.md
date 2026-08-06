@@ -27,6 +27,45 @@ its own judge**.
 
 ---
 
+## Demo
+
+The assistant UI and the eval outputs, from a live run.
+
+### Streamlit chat UI — `make ui`
+
+**Single model.** Every turn carries a full trace: the retrieval calls it made, latency, tokens, and cost. Most agent bugs are retrieval bugs, so the trace is a first-class part of the UI rather than a debug afterthought.
+
+![Single-model chat with per-turn tool trace](docs/screenshots/04-ui-single-model-trace.png)
+
+**Side-by-side.** The same prompt goes to two arms with independent memory, so the quality gap is observable directly rather than only through aggregate numbers. Shown here: the frontier arm against the offline `mock-strong` baseline (the live OSS arm needs `TOGETHER_API_KEY` credits).
+
+![Side-by-side comparison of two arms on one prompt](docs/screenshots/05-ui-side-by-side.png)
+
+**Guardrails.** Flip the toggle and a harmful request is intercepted *before* the model is ever called — zero tokens, zero cost, and the trace names the category that fired.
+
+![Harmful request intercepted by the guardrail layer](docs/screenshots/06-ui-guardrail-intercept.png)
+
+### Evaluation report — `make evals`
+
+A self-contained HTML scorecard: headline pass rates, per-axis Wilson confidence intervals, judge quality, and the worst failures with evidence.
+
+![Evaluation report scorecard](docs/screenshots/02-report-scorecard.png)
+
+<details>
+<summary>Full report (all sections)</summary>
+
+![Full evaluation report](docs/screenshots/03-report-full.png)
+
+</details>
+
+### CLI eval run — `make dry-run`
+
+The whole pipeline offline (mock arms, mock judge), ending in a significance-tested results table.
+
+![CLI eval run](docs/screenshots/01-cli-eval-run.png)
+
+---
+
 ## Quick start
 
 Everything below runs **with no API keys and no cost.** The mock provider is a
