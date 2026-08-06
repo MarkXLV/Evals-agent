@@ -20,6 +20,7 @@ demonstration of what the guardrail layer buys.
 from __future__ import annotations
 
 import sys
+from contextlib import nullcontext
 from pathlib import Path
 
 # Allow `streamlit run` on this file directly, without installing the package.
@@ -161,7 +162,11 @@ st.session_state.setdefault("log", [])
 for entry in st.session_state["log"]:
     with st.chat_message("user"):
         st.markdown(entry["user"])
-    columns = st.columns(len(entry["responses"])) if len(entry["responses"]) > 1 else [st]
+    columns = (
+        st.columns(len(entry["responses"]))
+        if len(entry["responses"]) > 1
+        else [nullcontext()]
+    )
     for column, (label, payload) in zip(columns, entry["responses"].items()):
         with column:
             with st.chat_message("assistant"):
@@ -179,7 +184,7 @@ if prompt := st.chat_input("Ask about sleep, nutrition, movement, or stress…")
         st.markdown(prompt)
 
     responses: dict[str, dict] = {}
-    columns = st.columns(len(arm_labels)) if len(arm_labels) > 1 else [st]
+    columns = st.columns(len(arm_labels)) if len(arm_labels) > 1 else [nullcontext()]
 
     for column, label in zip(columns, arm_labels):
         with column:
