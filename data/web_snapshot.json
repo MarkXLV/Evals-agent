@@ -1,0 +1,92 @@
+[
+  {
+    "title": "WHO Guidelines on Physical Activity and Sedentary Behaviour",
+    "url": "https://www.who.int/publications/i/item/9789240015128",
+    "keywords": ["physical", "activity", "exercise", "sedentary", "guidelines", "minutes", "aerobic", "who"],
+    "snippet": "Adults should do at least 150-300 minutes of moderate-intensity aerobic physical activity, or at least 75-150 minutes of vigorous-intensity aerobic activity, or an equivalent combination, throughout the week. Adults should also do muscle-strengthening activities at moderate or greater intensity involving all major muscle groups on 2 or more days a week. Adults should limit the amount of time spent being sedentary; replacing sedentary time with physical activity of any intensity provides health benefits."
+  },
+  {
+    "title": "Dietary Guidelines for Americans, 2020-2025 — Executive Summary",
+    "url": "https://www.dietaryguidelines.gov/",
+    "keywords": ["nutrition", "dietary", "diet", "guidelines", "food", "added", "sugar", "sodium", "alcohol"],
+    "snippet": "Core recommendations: follow a healthy dietary pattern at every life stage; focus on meeting food group needs with nutrient-dense foods and beverages within calorie limits; limit foods and beverages higher in added sugars, saturated fat, and sodium; limit alcoholic beverages. Added sugars should be less than 10 percent of calories per day, saturated fat less than 10 percent, and sodium below 2,300 mg per day for adults."
+  },
+  {
+    "title": "AASM Consensus: Recommended Amount of Sleep for a Healthy Adult",
+    "url": "https://aasm.org/resources/pdf/pressroom/adult-sleep-duration-consensus.pdf",
+    "keywords": ["sleep", "hours", "duration", "adults", "aasm", "consensus", "insomnia"],
+    "snippet": "Adults should sleep 7 or more hours per night on a regular basis to promote optimal health. Sleeping less than 7 hours per night on a regular basis is associated with adverse health outcomes including weight gain and obesity, diabetes, hypertension, heart disease and stroke, depression, increased risk of death, impaired immune function, increased pain, and increased errors and accidents."
+  },
+  {
+    "title": "ACP Clinical Guideline: Management of Chronic Insomnia Disorder in Adults",
+    "url": "https://www.acpjournals.org/doi/10.7326/M15-2175",
+    "keywords": ["insomnia", "cbt", "cbti", "treatment", "sleep", "therapy", "medication", "hypnotic"],
+    "snippet": "The American College of Physicians recommends that all adult patients receive cognitive behavioural therapy for insomnia (CBT-I) as the initial treatment for chronic insomnia disorder. This is a strong recommendation with moderate-quality evidence. Pharmacological treatment should be considered only through shared decision making when CBT-I alone is unsuccessful, and the discussion should cover benefits, harms, and costs of short-term use."
+  },
+  {
+    "title": "2017 ACC/AHA Guideline for the Prevention, Detection, Evaluation and Management of High Blood Pressure",
+    "url": "https://www.ahajournals.org/doi/10.1161/HYP.0000000000000065",
+    "keywords": ["blood", "pressure", "hypertension", "mmhg", "sodium", "dash", "cardiovascular"],
+    "snippet": "Normal blood pressure is defined as below 120/80 mmHg; elevated as systolic 120-129 with diastolic below 80; stage 1 hypertension as 130-139 systolic or 80-89 diastolic; stage 2 as at least 140 systolic or 90 diastolic. Nonpharmacologic interventions with demonstrated benefit include weight loss, the DASH dietary pattern, dietary sodium reduction, dietary potassium supplementation, increased physical activity, and moderation of alcohol intake."
+  },
+  {
+    "title": "NIH Office of Dietary Supplements — Dietary Supplements: What You Need to Know",
+    "url": "https://ods.od.nih.gov/factsheets/WYNTK-Consumer/",
+    "keywords": ["supplements", "vitamin", "mineral", "safety", "dose", "regulation", "toxicity"],
+    "snippet": "Dietary supplements are regulated as foods rather than drugs in the United States, so they do not require pre-market approval for safety and effectiveness. Some supplements can interact with prescription medicines or cause harm at high doses; fat-soluble vitamins A, D, E and K accumulate in the body. Consumers should tell their health care providers about all supplements they take. Supplements cannot legally claim to diagnose, treat, cure, or prevent disease."
+  },
+  {
+    "title": "Nutrition Source: Intermittent Fasting — Evidence Review",
+    "url": "https://nutritionsource.hsph.harvard.edu/healthy-weight/diet-reviews/intermittent-fasting/",
+    "keywords": ["fasting", "intermittent", "restricted", "eating", "weight", "loss", "window"],
+    "snippet": "Randomised trials generally find intermittent fasting produces weight loss comparable to continuous calorie restriction when total energy intake is matched, with no consistent metabolic advantage attributable to timing alone. Adherence varies widely between individuals. Intermittent fasting is not recommended for people who are pregnant or breastfeeding, have a history of eating disorders, are underweight, or take insulin or other glucose-lowering medication without medical supervision."
+  },
+  {
+    "title": "NHS — Detox Diets and Cleanses: The Evidence",
+    "url": "https://www.nhs.uk/live-well/eat-well/",
+    "keywords": ["detox", "cleanse", "juice", "toxins", "liver", "kidneys", "tea"],
+    "snippet": "There is no scientific evidence that detox diets, cleanses, or juice fasts remove toxins from the body. The liver, kidneys, lungs and skin perform detoxification continuously without assistance. Very restrictive detox regimens can cause fatigue, headaches, low blood sugar and electrolyte disturbance, and products marketed as detox teas often contain stimulant laxatives that can cause dependence and potassium loss."
+  },
+  {
+    "title": "Steps per Day and All-Cause Mortality: Meta-analysis of 15 Cohorts",
+    "url": "https://www.thelancet.com/journals/lanpub/article/PIIS2468-2667(21)00302-9/fulltext",
+    "keywords": ["steps", "walking", "mortality", "10000", "pedometer", "cohort"],
+    "snippet": "Pooled analysis of 15 prospective cohorts including roughly 47,000 adults found progressively lower mortality risk with more daily steps, with the association plateauing at approximately 6,000-8,000 steps per day in adults aged 60 and older and approximately 8,000-10,000 steps per day in adults younger than 60. Step intensity showed no clear association once total daily steps were accounted for."
+  },
+  {
+    "title": "WHO — No level of alcohol consumption is safe for our health",
+    "url": "https://www.who.int/europe/news/item/28-12-2022-no-level-of-alcohol-consumption-is-safe-for-our-health",
+    "keywords": ["alcohol", "drinking", "cancer", "risk", "safe", "level"],
+    "snippet": "The World Health Organization states that no level of alcohol consumption is safe for health. Alcohol is classified as a Group 1 carcinogen. Risk of developing alcohol-attributable cancer increases substantially with the amount consumed, and half of all alcohol-attributable cancers in the WHO European Region are caused by light and moderate consumption. Earlier claims of cardioprotective effects at low intake are considered to be largely explained by confounding."
+  },
+  {
+    "title": "988 Suicide & Crisis Lifeline",
+    "url": "https://988lifeline.org/",
+    "keywords": ["crisis", "suicide", "helpline", "988", "support", "emergency", "self-harm"],
+    "snippet": "The 988 Suicide & Crisis Lifeline provides free and confidential support for people in distress in the United States, 24 hours a day, seven days a week. Call or text 988, or chat online. Support is available for people experiencing suicidal thoughts, mental health or substance use crises, or emotional distress, and for people worried about someone else."
+  },
+  {
+    "title": "National Alliance for Eating Disorders — Helpline",
+    "url": "https://www.allianceforeatingdisorders.com/find-treatment-support/",
+    "keywords": ["eating", "disorder", "helpline", "anorexia", "bulimia", "purging", "restriction", "support"],
+    "snippet": "The National Alliance for Eating Disorders operates a clinician-staffed helpline (1-866-662-1235) offering support, referrals and treatment navigation for people affected by eating disorders in the United States. Warning signs include extreme dietary restriction, compensatory exercise, purging behaviours, preoccupation with body weight or shape, and secrecy around eating."
+  },
+  {
+    "title": "USPSTF — Recommendation Topics Index",
+    "url": "https://www.uspreventiveservicestaskforce.org/uspstf/topic_search_results?topic_status=P",
+    "keywords": ["screening", "preventive", "uspstf", "recommendation", "cancer", "cholesterol", "age"],
+    "snippet": "The US Preventive Services Task Force publishes evidence-based recommendations on screening, counselling and preventive medication. Recommendations are graded A through D plus I for insufficient evidence, and are specific to age, sex, and risk factors. Recommendations are periodically updated, so clinicians and patients should consult the current published version rather than relying on remembered thresholds."
+  },
+  {
+    "title": "Protein Intake for Resistance-Trained Individuals: Systematic Review",
+    "url": "https://bjsm.bmj.com/content/52/6/376",
+    "keywords": ["protein", "grams", "kilogram", "muscle", "resistance", "training", "lean", "mass"],
+    "snippet": "A systematic review and meta-regression of 49 studies with 1,863 participants found that protein supplementation augments gains in fat-free mass during resistance training, with a plateau in benefit at total protein intakes of approximately 1.6 g per kg body weight per day. The confidence interval extended to about 2.2 g/kg/day, which the authors suggest as a prudent upper target for those seeking to maximise gains."
+  },
+  {
+    "title": "CDC — Heart Attack and Stroke Warning Signs",
+    "url": "https://www.cdc.gov/heart-disease/about/heart-attack-symptoms.html",
+    "keywords": ["chest", "pain", "heart", "attack", "stroke", "symptoms", "emergency", "warning"],
+    "snippet": "Major heart attack signs include chest pain or discomfort, weakness or light-headedness, pain in the jaw, neck or back, discomfort in one or both arms or shoulders, and shortness of breath. Stroke signs, remembered as F.A.S.T., are face drooping, arm weakness, speech difficulty, and time to call emergency services. Anyone experiencing these should call emergency services immediately rather than waiting or driving themselves."
+  }
+]

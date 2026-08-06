@@ -1,0 +1,16 @@
+# ---- core runtime (evals engine is stdlib-only by design) ----
+python-dotenv>=1.0.0
+
+# ---- model providers (imported lazily; install only what you use) ----
+anthropic>=0.39.0          # frontier assistant + LLM judge
+openai>=1.40.0             # OpenAI-compatible client -> Together AI / HF router (OSS model)
+huggingface_hub>=0.24.0    # optional: direct HF Inference Providers path
+
+# ---- interfaces ----
+streamlit>=1.36.0          # chat UI
+
+# ---- web search tool (optional; falls back to offline stub) ----
+tavily-python>=0.5.0
+
+# ---- dev ----
+pytest>=8.0.0

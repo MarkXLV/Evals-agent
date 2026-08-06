@@ -1,0 +1,20 @@
+.env
+*.pyc
+__pycache__/
+.pytest_cache/
+.venv/
+venv/
+.DS_Store
+.idea/
+.vscode/
+
+# Eval outputs. runs/ can get large (full traces per case), so it stays out of
+# version control. reports/ is ignored EXCEPT the final deliverables, which are
+# whitelisted below so the submitted results ship with the repo.
+runs/
+reports/*
+!reports/evaluation.html
+!reports/evaluation.json
+!reports/evaluation.pdf
+!reports/judge_quality.json
+!reports/guardrail_ab.json
