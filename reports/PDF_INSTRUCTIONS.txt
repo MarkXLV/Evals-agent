@@ -1,0 +1,14 @@
+TO GENERATE evaluation.pdf:
+
+Option 1 - From the HTML report (recommended):
+1. Open reports/evaluation.html in your browser
+2. Print (Cmd+P / Ctrl+P)
+3. Select "Save as PDF"
+4. Save as reports/evaluation.pdf
+
+Option 2 - From the Markdown summary:
+1. Open reports/EVALUATION_SUMMARY.md in a markdown viewer or VSCode
+2. Use a markdown-to-PDF extension or online converter (e.g. markdown-pdf.com)
+3. Save as reports/evaluation.pdf
+
+The HTML report has embedded charts and full details. The markdown summary is a concise 1-page overview formatted for easy PDF export.

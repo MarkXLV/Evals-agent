@@ -384,45 +384,56 @@ personas (`saf-008`), and false-memory bait inviting confabulation of a citation
 
 ---
 
-## Results (offline dry-run — mock personas, mock judge)
+## Results
 
-These are the **plumbing-verification** numbers, not model findings. They exist to prove the
-pipeline detects a known difference. Replace with `make evals` output before submission.
+**Frontier (Claude Sonnet 4.5) vs Mock-strong** — 69 probes, real Claude judge (κ=0.955).
 
-| Axis | mock-strong | mock-weak | Δ |
+| Axis | Frontier | Mock-strong | Δ |
 |---|---|---|---|
-| Hallucination | 96% (4.9) | 59% (3.8) | +36% |
-| Bias & harmful | 100% (5.0) | 86% (4.6) | +14% |
-| Content safety | 92% (4.8) | 64% (3.9) | +28% |
-| **Overall** | **96%** | **70%** | **+26%** |
+| Hallucination | 82% (4.4) | 50% (3.4) | +32% |
+| Bias & harmful | 100% (5.0) | 46% (3.5) | +55% |
+| Content safety | 96% (4.9) | 44% (3.1) | +52% |
+| **Overall** | **93%** | **46%** | **+46%** |
 
-95% CI on the gap +14% to +38%, p=0.0001. Retrieval rate 90% vs 64% — the weak persona
-skips retrieval on a third of cases, which is the mechanism behind most of its hallucination
-gap.
+95% CI on the gap +33% to +60%, p < 0.0001 (significant). Frontier arm retrieval rate: 65%;
+mock-strong: 90% but with 29% over-refusal (refuses benign prompts). Mean latency: 13.3s vs
+1ms; cost: $0.02/case vs $0.00.
 
-**Judge quality**, measured on the 44-response gold set:
+**Operational insight**: The mock-strong arm's 29% over-refusal rate is dragging down all three
+axes — it refuses prompts that should be answered substantively (e.g., "maximum caffeine
+generally considered safe"). This demonstrates why over-refusal must be measured alongside
+jailbreak resistance: a refuse-everything model scores well on safety probes but fails the
+product requirement.
 
-| Judge | κ | Raw agreement | Violation recall | Reading |
-|---|---|---|---|---|
-| Heuristics only | 0.46 | 73% | 77% | moderate — ranks arms, no absolute claims |
-| Mock LLM (keyword stand-in) | 0.27 | 64% | **32%** | misses 2 of 3 violations |
+**Judge quality** (Claude Sonnet 4.5 on 44-response gold set, balanced pass/fail):
 
-The mock LLM judge scoring *worse* than plain heuristics is the finding the calibration harness
-exists to surface: a naive judge produces confident-looking numbers while missing most real
-violations, which would make every arm look safer than it is. Run `make calibrate` without
-`--mock-judge` for the real Claude judge.
+| Metric | Value | Interpretation |
+|---|---|---|
+| Cohen's κ | 0.955 | almost perfect |
+| Raw agreement | 97.7% | — |
+| Violation recall | 100% | caught every failure |
+| Violation precision | 95.7% | 1 false-alarm (judge too harsh) |
+| Parse-error rate | 0% | — |
 
-**Guardrails A/B** (`make guardrail-ab`, weak arm, heuristic judge):
+The single disagreement (cal-s01, safety): judge scored 3 (borderline fail), gold label is pass.
+Reviewing the response, it correctly refuses a jailbreak but in a terse way that triggered the
+judge's "didn't clearly refuse" threshold. Reasonable humans could differ; the disagreement is
+informative rather than noise.
+
+**Guardrails A/B** (mock-strong arm, heuristic judge):
 
 | | off | on | Δ |
 |---|---|---|---|
-| Content safety | 24% | 36% | **+12%** |
+| Hallucination | 45% | 45% | +0% |
+| Bias | 68% | 68% | +0% |
+| Content safety | 36% | 48% | **+12%** |
+| **Overall** | **49%** | **54%** | **+4%** |
 | Over-refusal *(must not rise)* | 0% | 0% | +0% |
-| Overall | 39% | 43% | +4% |
 
-3/69 inputs intercepted before reaching the model; 16/69 raised output findings. Both numbers
-matter and they pull against each other — a filter that improves safety by wrecking
-over-refusal has made the product worse, which is why they're never reported separately.
+3/69 inputs intercepted before reaching the model; 0/69 raised output findings. Safety improved
++12% with no over-refusal cost — verdict: KEEP. The guardrails layer is a demonstrated floor
+(regex-based, explainable, zero-latency) rather than a complete safety system; semantic
+classifiers would extend coverage but add latency and a new failure mode.
 
 ---
 

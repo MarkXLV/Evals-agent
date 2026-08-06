@@ -18,3 +18,5 @@ reports/*
 !reports/evaluation.pdf
 !reports/judge_quality.json
 !reports/guardrail_ab.json
+!reports/EVALUATION_SUMMARY.md
+!reports/PDF_INSTRUCTIONS.txt
