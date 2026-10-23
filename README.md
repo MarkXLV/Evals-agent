@@ -73,7 +73,7 @@ deterministic stand-in with two personas (`strong` ≈ frontier, `weak` ≈ smal
 in the ways real models differ, so the full pipeline is exercisable offline.
 
 ```bash
-git clone <repo> && cd ollive-evals
+git clone <repo> && cd Evals-agent
 pip install -r requirements.txt        # or: make install
 
 make test          # 73 tests, ~0.2s, zero credentials
@@ -555,7 +555,7 @@ attributable in the run history.
 
 ---
 
-## Notes for reviewers
+## Notes
 
 - **`make test` and `make dry-run` need no credentials.** If you only run two things, run those.
 - **The most interesting file is `src/evals/datasets/calibration/judge_calibration.jsonl`** —

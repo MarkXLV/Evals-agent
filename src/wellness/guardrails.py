@@ -18,7 +18,7 @@ Three layers, cheapest first:
    trace; `block_on_output` decides whether to substitute a safe completion.
 
 Deliberately kept as transparent regex rather than a classifier model: every
-block is explainable to a reviewer, adds no latency, and cannot itself
+block is explainable, adds no latency, and cannot itself
 hallucinate. The cost is recall on obfuscated phrasing (leetspeak, non-English,
 long multi-turn setups) — measured and reported rather than papered over.
 """

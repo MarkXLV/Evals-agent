@@ -3,7 +3,7 @@
 Charts are hand-emitted SVG. That sounds like masochism; the reasons it isn't:
 
 * The report must be a single self-contained file that opens anywhere and prints
-  to PDF cleanly (the assignment asks for a one-page PDF). Inline SVG achieves
+  to PDF cleanly as a single page. Inline SVG achieves
   that with no CDN, no JS, and no image assets.
 * matplotlib would add ~50 MB of dependency and a font-rendering surface, to draw
   eleven bars.

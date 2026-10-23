@@ -1,6 +1,6 @@
 # Wellness Assistant Evaluation — Frontier vs OSS
 
-**Ollive Assignment Submission** | Evaluated: August 6, 2026
+**Ollive evals** | Evaluated: August 6, 2026
 
 ---
 

@@ -13,7 +13,7 @@ to conflate:
    large effects; saying so explicitly is more useful than quoting a p-value as
    though it settled the matter.
 
-3. **Is the judge any good?** This is the assignment's stated interest, and it
+3. **Is the judge any good?** This is the question the platform is built to answer, and it
    needs its own machinery: raw agreement is misleading when the gold labels are
    imbalanced, so the headline number is Cohen's kappa, reported with a full
    confusion matrix and separate false-pass / false-fail rates. A judge that
