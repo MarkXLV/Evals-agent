@@ -1,4 +1,4 @@
-# Ollive — Wellness Assistant + Evals Platform
+# Evals-agent — Wellness Assistant + Evals Platform
 
 A wellness assistant deployed twice under an **identical architectural spec** — once on an
 open-source model, once on a frontier model — plus an evaluation platform that compares them
